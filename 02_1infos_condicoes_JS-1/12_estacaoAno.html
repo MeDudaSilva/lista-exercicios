@@ -1,0 +1,38 @@
+<script>
+    /*
+    //PROBLEMA
+    Faça um script que pergunte para a pessoa em qual hemisfério ela está e qual o mês atual.
+    De acordo com as respostas, informe qual a estação do ano correspondente.
+    */
+
+    //ENTRADA
+
+    const hemisfério = prompt("Informe em qual hemisfério você está: ")
+    const mês = prompt("Informe em qual mês você está;")
+
+    //PROCESSAMENTO
+
+    if (hemisfério === "sul" && mês === "março" || mês === "abril" || mês === "maio") {
+        document.write("você está no outono")
+    } else if (hemisfério === "norte" && mês === "março" || mês === "abril" || mês === "maio" ) {
+        document.write("você está na primavera")
+    } else if (hemisfério === "sul" && mês === "junho" || mês === "julho" || mês === "agosto") {
+        document.write("você está no inverno")
+    } else if (hemisfério === "norte" && mês === "junho" || mês === "julho" || mês === "agosto") {
+        document.write("você está no verão")
+    } else if (hemisfério === "sul" && mês === "setembro" || mês === "outubro" || mês ===  "novembro") {
+        document.write("você está na primavera")
+    } else if (hemisfério === "norte" && mês === "setembro" || mês === "outubro" || mês ===  "novembro") {
+        document.write("você está na outono")
+    } else if (hemisfério === "sul" && mês === "dezembro" || mês === "janeiro" || mês === "fevereiro") {
+        document.write("você está no verão")
+    } else if (hemisfério === "norte" && mês === "dezembro" || mês === "janeiro" || mês === "fevereiro") {
+        document.write("você está no inverno")
+    } else {
+    document.write("Informe um hemisfério e um mês válido")
+    }
+ 
+    //SAÍDA
+
+
+</script>
